@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#355591",
+              "powder-blue": "#f2f8ff",
+              orange: "#f29c13",
+              "white-gray": "#f6f6f6",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .triangle-range {
+        -webkit-appearance: none; 
+        appearance: none;
+        width: 100%;
+        height: 10px;
+        background: transparent; 
+        position: relative;
+      }
+
+      .triangle-range::before {
+        content: "";
+        position: absolute;
+        top: -5px; 
+        left: 0;
+        right: 0;
+        height: 0;
+        border-left: 5px solid transparent; 
+        border-right: 5px solid transparent; 
+        border-bottom: 10px solid #007bff; 
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar start  -->
+    <nav
+      class="fixed top-0 inset-x-0 z-50 flex flex-wrap justify-between max-w-5xl mx-auto"
+    >
+      <a href="/">
+        <img class="h-14" src="/assets/images/logo.png" alt="logo" />
+      </a>
+      <div class="flex flex-wrap items-center text-white font-bold">
+        <ol class="flex flex-wrap gap-10">
+          <li>
+            <a href="#home"> Home </a>
+          </li>
+          <li><a href="#classes"> Classes </a></li>
+          <li><a href="#trainer"> Trainer </a></li>
+          <li><a href="#review"> Review </a></li>
+          <li><a href="#contact"> Contact </a></li>
+        </ol>
+        <button
+          class="ml-8 font-bold transition-all duration-300 uppercase p-2 bg-orange hover:scale-110 active:scale-100 rounded-md"
+        >
+          Join Us
+        </button>
+      </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- Hero Start -->
+    <section
+      id="home"
+      class="h-[100dvh] flex flex-col"
+      aria-label="hero-section"
+    >
+      <div class="hero-bg">
+        <div
+          class="max-w-3xl text-white mx-auto relative top-2/3 -translate-y-1/2"
+        >
+          <span
+            class="inline-block bg-primary uppercase font-extrabold py-0.5 px-3 rounded-sm"
+            >powerfull</span
+          >
+          <h1 class="capitalize font-extrabold text-6xl">
+            Group <br />
+            practice <br />
+            with Trainer
+          </h1>
+          <p class="font-bold text-xl mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod minus
+            nesciunt facilis sint nisi! Rem cupiditate dicta dolore fuga, eius
+            suscipit consequuntur, vero saepe debitis itaque quia recusandae?
+            Eius, vel.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <button></button>
+            <button></button>
+          </div>
+        </div>
+      </div>
+      <!-- Stats Section Start -->
+      <section class="bg-powder-blue" aria-label="cards">
+        <div
+          id="stats"
+          class="grid grid-cols-4 grid-rows-1 max-w-5xl mx-auto gap-6 p-8"
+        ></div>
+      </section>
+      <!-- Stats Section End -->
+    </section>
+    <!-- Hero End -->
+
+    <!-- Class Section Start -->
+    <section id="class"></section>
+    <!-- Class Section End -->
+
+    <!-- BMI Calculator Start -->
+    <section class="max-w-5xl flex flex-wrap gap-6 mx-auto py-10">
+      <div class="flex-1">
+        <h1 class="mb-4 font-extrabold text-primary text-3xl">
+          BMI Calculator
+        </h1>
+        <p class="font-bold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          distinctio amet sapiente praesentium placeat impedit ea obcaecati quo
+          illum consectetur
+        </p>
+        <br />
+        <p class="font-bold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          distinctio amet sapiente praesentium placeat impedit ea obcaecati quo
+          illum consectetur
+        </p>
+
+        <div class="flex flex-wrap gap-6 mt-6">
+          <div>
+            <input
+              id="heightInput"
+              class="border px-2 py-0.5 rounded-md"
+              placeholder="Your Height"
+              type="number"
+              oninput="calculateBMI()"
+            />
+            cm
+          </div>
+          <div>
+            <input
+              id="weightInput"
+              class="border px-2 py-0.5 rounded-md"
+              placeholder="Your Weight"
+              type="number"
+              oninput="calculateBMI()"
+            />
+            kg
+          </div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img src="/assets/images/bmi-index.jpg" alt="bmi-index" />
+        <div>
+          <div id="bmiIndicator" class="triangle"></div>
+        </div>
+      </div>
+    </section>
+    <!-- BMI Calculator End -->
+
+    <!-- Trainer Start -->
+    <section id="trainer"></section>
+    <!-- Trainer End -->
+
+    <!-- Purchase Start -->
+    <section></section>
+    <!-- Purchase End -->
+
+    <!-- Review Start -->
+    <section id="review"></section>
+    <!-- Review End -->
+
+    <!-- Contact Start -->
+    <section id="contact"></section>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-primary text-white">
+      <div class="max-w-5xl mx-auto">
+        <div>
+          <a href="/">
+            <img class="h-14" src="/assets/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <p class="mt-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          consequuntur culpa soluta nesciunt quam modi et animi aperiam
+          necessitatibus, quae consequatur reiciendis corporis voluptatem
+          cumque, sapiente vitae dolorum libero fugiat!
+        </p>
+        <div class="flex flex-wrap mt-2">
+          <div class="flex-1 text-left">
+            <h1 class="font-semibold text-2xl">Information</h1>
+            <ol>
+              <li><a href="#classes"> About Us   </a></li>
+              <li><a href="#classes"> Classes </a></li>
+              <li><a href="#classes"> Blog </a></li>
+              <li><a href="#classes"> Contact </a></li>
+              <li><a href="#classes"> XXXXX </a></li>
+            </ol>
+          </div>
+          <div class="flex-1 text-left">
+            <h1 class="font-semibold text-2xl">Helpful Links</h1>
+            <ol>
+              <li><a href="#classes"> Services </a></li>
+              <li><a href="#classes"> Support </a></li>
+              <li><a href="#classes"> Classes </a></li>
+              <li><a href="#classes"> Privacy Policy </a></li>
+              <li><a href="#classes"> XXXXX </a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+
+  <script src="/assets/js/generateStatsCard.js"></script>
+  <script src="/assets/js/bmiCalculator.js"></script>
+</html>
