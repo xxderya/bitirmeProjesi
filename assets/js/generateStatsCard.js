@@ -1,19 +1,22 @@
-const statsContainer = document.getElementById("stats");
-
+const statsContainer = document.getElementById('stats');
 function generateStatsCards() {
   const stats = [
-    { title: "Stat 1", count: 123 },
-    { title: "Stat 2", count: 1 },
-    { title: "Stat 3", count: 13 },
-    { title: "Stat 4", count: 133 },
+    { title: 'Course', count: 325 },
+    { title: 'Work Out', count: 405 },
+    { title: 'Working Hour', count: 305 },
+    { title: 'Happy Client', count: 705 },
   ];
 
-  const statsHTML = stats.map(element => `
-    <div class="font-bold bg-white text-center p-3">
-      <h1 class="text-primary mb-3">${element.title}</h1>
-      <p class="text-black">${element.count}</p>
+  const statsHTML = stats
+    .map(
+      (element) => `
+    <div class="font-bold bg-white text-center p-6">
+      <h1 class="text-primary mb-3 text-3xl">${element.count}</h1>
+      <p class="text-gray-900 font-extrabold text-xl">${element.title}</p>
     </div>
-  `).join('');
+  `
+    )
+    .join('');
 
   statsContainer.innerHTML = statsHTML;
 }

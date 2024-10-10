@@ -1,20 +1,58 @@
-.hero-bg{
+.hero-bg {
     background-image: url(/assets/images/hero-man.jpg);
     background-size: cover;
-    background-position: center 20%; 
+    background-position: center 20%;
     width: 100%;
     background-repeat: no-repeat;
     flex-grow: 1;
 }
 
 
-.triangle { 
-    width: 30px; 
-    height: 30px; 
-    clip-path: polygon(50% 0, 100% 100%, 0 100%); 
-    background-color: #f29c13; 
+.triangle {
+    width: 30px;
+    height: 30px;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    background-color: #f29c13;
     position: relative;
     left: 0;
-} 
+}
+
+.teeth {
+    position: relative;
+}
+
+.teeth::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    background-color: #8096be;
+}
+
+.teeth::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(1% 100%, 100% 0, 0 0);
+    background-color: #8096be;
+}
 
 
+.clip-detail {
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.ch {
+    height: 24px;
+    width: 24px;
+}
+
+.ch-chart {
+    background-image: url(/assets/images/chart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
