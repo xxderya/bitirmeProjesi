@@ -56,3 +56,38 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.tab-content {
+    display: none;
+}
+
+.tab-link-active {
+    position: relative;
+    background-color: #f29c13 !important;
+    box-shadow: 1px 1px 12px 0px #f29c13;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-link-active::before {
+    transition: all 0.3s ease-in-out;
+    background-color: #f29c13;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 29%, 0 0, 100% 0);
+}
+
+#class-section::before {
+    background: #f6f6f6;
+    position: absolute;
+    right: 0;
+    inset: -25% -25% -25% 45%;
+    rotate: -15deg;
+    content: "";
+    z-index: -1;
+}

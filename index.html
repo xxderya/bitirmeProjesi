@@ -80,16 +80,122 @@
   <!-- Hero End -->
 
   <!-- Class Section Start -->
-  <section id="class-section" class="max-w-5xl xl:max-w-7xl mx-auto py-10 text-center">
-    <h2 class="text-4xl font-extrabold text-primary uppercase">Our Classes</h2>
-    <div class="text-center">
-      <span class="h-3 bg-orange w-24 rounded-full inline-block mt-6 mb-8"></span>
+  <section class="relative overflow-hidden">
+    <div id="class-section" class="max-w-5xl xl:max-w-7xl mx-auto py-20 text-center">
+      <h2 class="text-4xl font-extrabold text-primary uppercase">Our Classes</h2>
+      <div class="text-center">
+        <span class="h-3 bg-orange w-24 rounded-full inline-block mt-6 mb-8"></span>
+      </div>
+      <p class="max-w-2xl mx-auto text-gray-600 mb-12 font-bold text-xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesentium, perferendis.
+      </p>
+
+      <div class="flex flex-wrap justify-between md:max-w-5xl mx-auto px-10">
+        <button id="tab-link-default" onclick="changeClass(event, 'yoga')"
+          class="bg-primary px-8 py-3 font-bold text-2xl text-white rounded tablinks">Yoga</button>
+        <button onclick="changeClass(event, 'group')"
+          class="bg-primary px-8 py-3 font-bold text-2xl text-white rounded tablinks">Group</button>
+        <button onclick="changeClass(event, 'solo')"
+          class="bg-primary px-8 py-3 font-bold text-2xl text-white rounded tablinks">Solo</button>
+        <button onclick="changeClass(event, 'stret')"
+          class="bg-primary px-8 py-3 font-bold text-2xl text-white rounded tablinks">Stretching</button>
+      </div>
+
+      <div class="flex flex-wrap justify-between px-10">
+        <section id="yoga" class="tab-content flex-wrap justify-between mt-20">
+          <div class="text-gray-600 font-bold text-xl text-left lg:w-1/2">
+            <h1 class="text-4xl font-extrabold mb-5">Why are your Yoga?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia optio voluptatum iusto rerum?
+              Obcaecati
+              labore cum officia pariatur asperiores architecto, laborum tempora in? Porro ut sapiente voluptatibus
+              alias
+              temporibus?
+            </p>
+            <br />
+            <div class="text-xl font-bold text-left">
+              <h1 class="text-4xl font-extrabold">When comes Yoga Your Time.</h1>
+              <p class="my-4">
+                Saturday-Sunday: 8:00am - 10:00am
+              </p>
+              <p class="my-4"> Monday-Tuesday: 10:00am - 12:00pm </p>
+              <p class="my-4"> Wednesday-Friday: 3:00pm - 6:00pm </p>
+            </div>
+          </div>
+          <div class="lg:w-1/2 p-14">
+            <img src="/assets/images/yoga.jpg" alt="">
+          </div>
+        </section>
+        <section id="group" class="tab-content flex-wrap justify-between mt-20">
+          <div class="text-gray-600 font-bold text-xl text-left lg:w-1/2">
+            <h1 class="text-4xl font-extrabold mb-5">Why are your Yoga?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia optio voluptatum iusto rerum?
+              Obcaecati
+              labore cum officia pariatur asperiores architecto, laborum tempora in? Porro ut sapiente voluptatibus
+              alias
+              temporibus?
+            </p>
+            <br />
+            <div class="text-xl font-bold text-left">
+              <h1 class="text-4xl font-extrabold">When comes Yoga Your Time.</h1>
+              <p class="my-4" class="w-1/2">
+                Saturday-Sunday: 8:00am - 10:00am
+              </p>
+              <p class="my-4"> Monday-Tuesday: 10:00am - 12:00pm </p>
+              <p class="my-4"> Wednesday-Friday: 3:00pm - 6:00pm </p>
+            </div>
+          </div>
+          <div class="lg:w-1/2 p-14">
+            <img src="/assets/images/group.webp" alt="">
+          </div>
+        </section>
+        <section id="solo" class="tab-content flex-wrap justify-between mt-20">
+          <div class="text-gray-600 font-bold text-xl text-left lg:w-1/2">
+            <h1 class="text-4xl font-extrabold mb-5">Why are your Yoga?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia optio voluptatum iusto rerum?
+              Obcaecati
+              labore cum officia pariatur asperiores architecto, laborum tempora in? Porro ut sapiente voluptatibus
+              alias
+              temporibus?
+            </p>
+            <br />
+            <div class="text-xl font-bold text-left">
+              <h1 class="text-4xl font-extrabold">When comes Yoga Your Time.</h1>
+              <p class="my-4">
+                Saturday-Sunday: 8:00am - 10:00am
+              </p>
+              <p class="my-4"> Monday-Tuesday: 10:00am - 12:00pm </p>
+              <p class="my-4"> Wednesday-Friday: 3:00pm - 6:00pm </p>
+            </div>
+          </div>
+          <div class="lg:w-1/2 p-14">
+            <img src="/assets/images/solo.jpg" alt="">
+          </div>
+        </section>
+        <section id="stret" class="tab-content flex-wrap justify-between mt-20">
+          <div class="text-gray-600 font-bold text-xl text-left lg:w-1/2">
+            <h1 class="text-4xl font-extrabold mb-5">Why are your Yoga?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia optio voluptatum iusto rerum?
+              Obcaecati
+              labore cum officia pariatur asperiores architecto, laborum tempora in? Porro ut sapiente voluptatibus
+              alias
+              temporibus?
+            </p>
+            <br />
+            <div class="text-xl font-bold text-left">
+              <h1 class="text-4xl font-extrabold">When comes Yoga Your Time.</h1>
+              <p class="my-4">
+                Saturday-Sunday: 8:00am - 10:00am
+              </p>
+              <p class="my-4"> Monday-Tuesday: 10:00am - 12:00pm </p>
+              <p class="my-4"> Wednesday-Friday: 3:00pm - 6:00pm </p>
+            </div>
+          </div>
+          <div class="lg:w-1/2 p-14">
+            <img src="/assets/images/stret.webp" alt="">
+          </div>
+        </section>
+      </div>
     </div>
-    <p class="max-w-2xl mx-auto text-gray-600 mb-12 font-bold text-xl">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesentium, perferendis.
-    </p>
-
-
   </section>
   <!-- Class Section End -->
 
@@ -418,5 +524,6 @@
 
 <script src="/assets/js/generateStatsCard.js"></script>
 <script src="/assets/js/bmiCalculator.js"></script>
+<script src="/assets/js/tab.js"></script>
 
 </html>
